@@ -6,7 +6,10 @@ if (menuButton && navigation) {
   document.documentElement.classList.add("js");
   menuButton.hidden = false;
 
-  function closeMenu({ restoreFocus = false } = {}) {
+  function closeMenu({
+    restoreFocus = mobileViewport.matches &&
+      navigation.contains(document.activeElement),
+  } = {}) {
     menuButton.setAttribute("aria-expanded", "false");
     navigation.classList.remove("is-open");
     if (restoreFocus) menuButton.focus();
@@ -20,6 +23,16 @@ if (menuButton && navigation) {
 
   navigation.addEventListener("click", (event) => {
     if (event.target.closest("a")) closeMenu();
+  });
+
+  navigation.addEventListener("focusout", (event) => {
+    if (
+      !event.relatedTarget &&
+      mobileViewport.matches &&
+      getComputedStyle(navigation).display === "none"
+    ) {
+      menuButton.focus({ preventScroll: true });
+    }
   });
 
   document.addEventListener("keydown", (event) => {
