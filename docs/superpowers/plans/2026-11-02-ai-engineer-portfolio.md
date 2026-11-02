@@ -32,13 +32,13 @@
 
 **Interfaces:** Navigation targets `#work`, `#about`, `#experience`, `#contact`. All assets use relative URLs. Native `details/summary` provides project expansion. JavaScript only enhances a mobile navigation toggle using `aria-expanded` and `hidden` or progressive CSS.
 
-- [ ] Confirm no application currently exists and establish a feature branch.
-- [ ] Copy the supplied portrait and PDF unchanged to the assets folder.
-- [ ] Write the complete factual semantic HTML with the approved section sequence and real profile/project links.
-- [ ] Add editorial responsive styling, a distinctive system overview, focus states, and reduced-motion rules.
-- [ ] Implement mobile menu open/close, Escape, link selection, and resize behavior without blocking the no-JS navigation.
-- [ ] Verify JavaScript syntax with `node --check site/dist/script.js` and inspect document links/assets using a standard-library parser.
-- [ ] Commit the complete implementation.
+- [x] Confirm no application currently exists and establish a feature branch.
+- [x] Copy the supplied portrait and PDF unchanged to the assets folder.
+- [x] Write the complete factual semantic HTML with the approved section sequence and real profile/project links.
+- [x] Add editorial responsive styling, a distinctive system overview, focus states, and reduced-motion rules.
+- [x] Implement mobile menu open/close, Escape, link selection, and resize behavior without blocking the no-JS navigation.
+- [x] Verify JavaScript syntax with `node --check site/dist/script.js` and inspect document links/assets using a standard-library parser.
+- [x] Commit the complete implementation.
 
 ## Task 2: Validate the visitor experience and independently review
 
@@ -46,11 +46,11 @@
 
 **Interfaces:** Serve `site/dist/` on loopback; use the same built files that will be deployed.
 
-- [ ] Start a static HTTP server and confirm HTTP 200 for page, CSS, JS, portrait, and PDF.
-- [ ] Use browser inspection for desktop/mobile layout, project details, anchors, mobile menu keyboard behavior, and contact/download URLs.
-- [ ] Check browser errors and document overflow; use an independent reviewer for factual accuracy, accessibility, and code quality.
-- [ ] Fix observed material issues and repeat affected checks.
-- [ ] Commit verified changes and record verification evidence.
+- [x] Start a static HTTP server and confirm HTTP 200 for page, CSS, JS, portrait, and PDF.
+- [x] Use browser inspection for desktop/mobile layout, project details, anchors, mobile menu keyboard behavior, and contact/download URLs.
+- [x] Check browser errors and document overflow; use an independent reviewer for factual accuracy, accessibility, and code quality.
+- [x] Fix observed material issues and repeat affected checks.
+- [x] Commit verified changes and record verification evidence.
 
 ## Task 3: Package and deliver
 
@@ -58,7 +58,7 @@
 
 **Interfaces:** Sites source helper accepts the returned credential through stdin and emits verified source commit/archive; private deploy consumes those exact values.
 
-- [ ] Register once, persist returned Site identity, and keep credentials out of files and output.
-- [ ] Package and push exact verified source through the supported helper, preserving the existing user GitHub remote.
-- [ ] Deploy privately and verify the terminal result; if infrastructure blocks publishing, report that limitation and deliver the verified local site.
-- [ ] Open the resulting site for the user and report the result, tests, and any material limitations.
+- [x] Register once, persist returned Site identity, and keep credentials out of files and output.
+- [x] Package and push exact verified source through the supported helper, preserving the existing user GitHub remote.
+- [x] Deploy privately and verify the terminal result; if infrastructure blocks publishing, report that limitation and deliver the verified local site.
+- [x] Open the resulting site for the user and report the result, tests, and any material limitations.

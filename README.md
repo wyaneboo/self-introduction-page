@@ -2,6 +2,10 @@
 
 A responsive, project-led portfolio based on the supplied resume. Built with semantic HTML, CSS, and a small progressive JavaScript enhancement for mobile navigation.
 
+Private review site: https://boo-wyane-ai-portfolio.wyaneboo.chatgpt.site
+
+Deployment confirmed on 2026-11-02. The portfolio is currently owner-private.
+
 ## Run locally
 
 From the repository root:
@@ -28,7 +32,7 @@ Fonts load from Google Fonts, with system fallbacks. Diagrams are conceptual ill
 node --check site/dist/script.js
 ```
 
-The delivery check includes local asset resolution, desktop/mobile browser inspection, keyboard navigation, project disclosures, and an independent factual and code review. See the approved design and implementation plan under `docs/superpowers/`.
+Verified JavaScript syntax, all local HTTP assets, internal anchors, source PDF/portrait hashes, desktop and mobile layout (including 320px and 390px widths), mobile menu/Escape behavior, keyboard focus across breakpoints, and project disclosures. An independent reviewer checked the complete code and compared factual copy to the PDF. The private deployment completed successfully. See the approved design and implementation plan under `docs/superpowers/`.
 
 ## Source accuracy
 
